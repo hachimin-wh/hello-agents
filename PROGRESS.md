@@ -3,7 +3,7 @@
 > 打勾规则：完成一项在这里打勾，状态：`未开始` / `进行中` / `完成`。
 > 主线：快速入门 agent 应用开发，实践优先。章节文档在 `docs/`，配套代码在 `code/`，扩展材料在 `Extra-Chapter/`。
 > 每章三步走：读文档 → 跑代码 → 改代码。光读不跑不算完成。
-> 清单顺序与跨仓库映射见上级目录 `learning-plan/LEARNING-PLAN.md`。
+> 清单顺序与跨仓库映射见上级目录 `agent-learning-plan/LEARNING-PLAN.md`。
 
 ## Phase 1: 概念速览
 
