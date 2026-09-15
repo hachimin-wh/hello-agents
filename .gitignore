@@ -167,3 +167,6 @@ test_*.py
 !test_tools.py
 .workbuddy/
 memory/
+
+# 本地下载的 PDF 教程发行版
+Hello-Agents-*.pdf
