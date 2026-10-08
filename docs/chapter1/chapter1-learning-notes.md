@@ -34,6 +34,16 @@
 
 核心规律：越往后越**不依赖瞬时感知**，越能应对**不确定性**。传统 agent 的"大脑"是规则/搜索算法，现代 agent 的大脑换成了 LLM。
 
+### 1.4 Agent Loop
+<div align="center">
+  <img src="https://raw.githubusercontent.com/datawhalechina/Hello-Agents/main/docs/images/1-figures/1757242319667-5.png" alt="图片描述" width="90%"/>
+</div>
+
+1. <strong>感知 (Perception)</strong>：智能体通过其传感器接收来自环境的输入信息，既可以是用户输入的指令，也可以是上一轮行动后的结果反馈。
+2. <strong>思考 (Thought)</strong>：智能体接收信息后，会基于 LLM 进行推理决策，主要细分为两部分：
+   - <strong>规划 (Planning)</strong>：智能体基于当前信息和其内部记忆，更新对任务和环境的理解，并制定或调整一个行动计划。例如将复杂目标分解为一系列更具体的子任务。
+   - <strong>工具选择 (Tool Selection)</strong>：根据当前计划，智能体从其可用的工具库中，选择最适合执行下一步骤的工具，并确定调用该工具所需的具体参数。
+3. <strong>行动 (Action)</strong>：决策完成后，智能体通过其执行器（Actuators）执行具体的行动。这通常表现为调用一个选定的工具（如代码解释器、搜索引擎 API），从而对环境施加影响，改变环境的状态。
 ---
 
 ## 二、ReAct 范式
